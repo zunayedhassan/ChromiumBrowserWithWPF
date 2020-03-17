@@ -1,0 +1,18 @@
+﻿<Window x:Class="ChromiumBrowserWithWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChromiumBrowserWithWPF"
+        mc:Ignorable="d"
+        Title="Using Chromoum Browser with WPF" Height="768" Width="1024" MinWidth="512">
+    <DockPanel x:Name="Root" LastChildFill="True">
+        <ToolBar DockPanel.Dock="Top">
+            <Label>Address</Label>
+            <TextBox x:Name="AddressTextBox" MinWidth="400"></TextBox>
+            <Button x:Name="SendButton">Send</Button>
+        </ToolBar>
+
+        <TextBox x:Name="Output" DockPanel.Dock="Right" MinWidth="256" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Background="Black" Foreground="Lime" FontFamily="Consolas" IsReadOnly="True"></TextBox>
+    </DockPanel>
+</Window>
